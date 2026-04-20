@@ -6,9 +6,9 @@ require('dotenv').config();
  */
 module.exports = {
   development: {
-    username: process.env.DB_USERNAME || 'task_user',
-    password: process.env.DB_PASSWORD || 'task_password',
-    database: process.env.DB_DATABASE || 'task_manager_db',
+    username: process.env.DB_USERNAME || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_DATABASE || 'task',
     host: process.env.DB_HOST || 'localhost',
     port: process.env.DB_PORT || 3306,
     dialect: 'mysql',
@@ -22,8 +22,8 @@ module.exports = {
   },
   test: {
     username: 'root',
-    password: 'root',
-    database: 'task_manager_test',
+    password: '',
+    database: 'task',
     host: 'localhost',
     port: 3306,
     dialect: 'mysql',
